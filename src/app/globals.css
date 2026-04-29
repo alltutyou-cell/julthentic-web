@@ -14,8 +14,7 @@
   --color-amber: #b88842;       /* Premium accent — sparingly */
 
   /* Fonts */
-  --font-display: var(--font-arsenica);
-  --font-display-bold: var(--font-arsenica-bold);
+  --font-display: var(--font-schrifted);
   --font-display-c: var(--font-gagen);
   --font-body: var(--font-machina);
   --font-body-alt: var(--font-craftwork);

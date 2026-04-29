@@ -2,21 +2,16 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const arsenica = localFont({
+const schrifted = localFont({
   src: [
-    { path: "./fonts/Arsenica-Antiqua-Regular-trial.ttf", weight: "400", style: "normal" },
-    { path: "./fonts/Arsenica-Antiqua-Italic-trial.ttf", weight: "400", style: "italic" },
-    { path: "./fonts/Arsenica-Antiqua-Medium-trial.ttf", weight: "500", style: "normal" },
+    { path: "./fonts/SFT Schrifted Serif TRIAL Display Regular.ttf", weight: "400", style: "normal" },
+    { path: "./fonts/SFT Schrifted Serif TRIAL Display Italic.ttf", weight: "400", style: "italic" },
+    { path: "./fonts/SFT Schrifted Serif TRIAL Display Medium.ttf", weight: "500", style: "normal" },
+    { path: "./fonts/SFT Schrifted Serif TRIAL Display Medium Italic.ttf", weight: "500", style: "italic" },
+    { path: "./fonts/SFT Schrifted Serif TRIAL Display Light.ttf", weight: "300", style: "normal" },
+    { path: "./fonts/SFT Schrifted Serif TRIAL Display Light Italic.ttf", weight: "300", style: "italic" },
   ],
-  variable: "--font-arsenica",
-  display: "swap",
-});
-
-const arsenicaBold = localFont({
-  src: [
-    { path: "./fonts/Arsenica-Antiqua-Demi-Bold-trial.ttf", weight: "600", style: "normal" },
-  ],
-  variable: "--font-arsenica-bold",
+  variable: "--font-schrifted",
   display: "swap",
 });
 
@@ -78,7 +73,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${arsenica.variable} ${arsenicaBold.variable} ${machina.variable} ${craftwork.variable} ${fliege.variable} ${gagen.variable}`}
+        className={`${schrifted.variable} ${machina.variable} ${craftwork.variable} ${fliege.variable} ${gagen.variable}`}
       >
         {children}
       </body>
