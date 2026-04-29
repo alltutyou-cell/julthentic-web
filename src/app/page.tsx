@@ -228,7 +228,7 @@ export default function Home() {
               className="display-sans mb-10"
               style={{ fontSize: "var(--text-display-lg)" }}
             >
-              Your audience scrolled past your last sales page in <em>8 seconds.</em>
+              Your audience scrolled past your last sales page in 8 seconds.
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
@@ -261,7 +261,7 @@ export default function Home() {
               className="display-sans mb-12"
               style={{ fontSize: "var(--text-display-lg)" }}
             >
-              Most coaches <em>think</em> they have a copy problem.
+              Most coaches think they have a copy problem.
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
@@ -349,7 +349,7 @@ export default function Home() {
               className="display-sans mb-12 max-w-4xl"
               style={{ fontSize: "var(--text-display-lg)" }}
             >
-              Words from people who&apos;ve <em>worked</em> with me.
+              Words from people who&apos;ve worked with me.
             </h2>
           </FadeIn>
 
@@ -448,7 +448,7 @@ export default function Home() {
               className="display-sans mb-12 text-bone"
               style={{ fontSize: "var(--text-display-lg)" }}
             >
-              <em>Numbers</em> first.
+              Numbers first.
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
@@ -501,7 +501,7 @@ export default function Home() {
               className="display-sans mb-10"
               style={{ fontSize: "var(--text-display-md)" }}
             >
-              Why I&apos;m in <em>Vietnam</em> writing copy for English-market
+              Why I&apos;m in Vietnam writing copy for English-market
               personal brands.
             </h2>
           </FadeIn>
@@ -552,7 +552,7 @@ export default function Home() {
               className="display-sans mb-12"
               style={{ fontSize: "var(--text-display-lg)" }}
             >
-              Projects I&apos;ve <em>turned down</em> — and why.
+              Projects I&apos;ve turned down — and why.
             </h2>
           </FadeIn>
           <div className="space-y-8">
