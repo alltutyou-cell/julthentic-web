@@ -1,8 +1,8 @@
 export function MetadataStrip() {
   return (
     <div className="meta-strip">
-      <span>10°48′ N · 106°37′ E</span>
-      <span className="meta-strip-divider">Ho Chi Minh City</span>
+      <span>16°04′ N · 108°13′ E</span>
+      <span className="meta-strip-divider">Danang</span>
       <span className="meta-strip-divider">UTC+7</span>
       <span className="meta-strip-divider">
         <span className="meta-dot" />
