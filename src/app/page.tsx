@@ -446,7 +446,7 @@ export default function Home() {
           <FadeIn delay={0.2}>
             <p className="body-serif text-xl md:text-2xl text-bone leading-relaxed mb-12">
               The Afnan Khalifa launch — joint with DRAY (128K, $28M+ student
-              revenue) and Yasmin.
+              revenue) and Jasmin.
             </p>
           </FadeIn>
 
