@@ -1,6 +1,8 @@
 import { FadeIn } from "@/components/FadeIn";
 import { RevealText } from "@/components/RevealText";
 import { ChapterIndex } from "@/components/ChapterIndex";
+import { Loader } from "@/components/Loader";
+import { MetadataStrip } from "@/components/MetadataStrip";
 
 const CHAPTERS = [
   { id: "hero", num: "01", label: "Vol. 01" },
@@ -113,16 +115,22 @@ const VOICES_OTHER = [
 export default function Home() {
   return (
     <main className="bg-bone text-ink">
+      <Loader />
       <ChapterIndex chapters={CHAPTERS} />
 
       {/* HEADER */}
-      <header className="container-wide flex items-center justify-between pt-8 pb-4">
-        <span className="display-italic text-2xl md:text-3xl text-ink leading-none">
-          julthentic
-        </span>
-        <span className="tag text-ink-muted hidden sm:block">
-          Launch copy · SMM · Personal brands
-        </span>
+      <header className="container-wide pt-8 pb-4">
+        <div className="flex items-center justify-between">
+          <span className="display-italic text-2xl md:text-3xl text-ink leading-none">
+            julthentic
+          </span>
+          <span className="tag text-ink-muted hidden sm:block">
+            Launch copy · SMM · Personal brands
+          </span>
+        </div>
+        <div className="mt-6 pt-6 border-t border-ink/10">
+          <MetadataStrip />
+        </div>
       </header>
 
       {/* VOL. 01 — HERO */}
@@ -143,7 +151,7 @@ export default function Home() {
             stagger={0.05}
             blur={14}
             duration={1.05}
-            className="display-italic text-balance leading-[1.02] max-w-5xl"
+            className="display-sans text-balance max-w-5xl"
             style={{ fontSize: "var(--text-display-xl)" }}
           >
             Every coach sounds the same right now.
@@ -156,7 +164,7 @@ export default function Home() {
             stagger={0.05}
             blur={14}
             duration={1.05}
-            className="display-italic text-balance leading-[1.02] max-w-5xl mt-2 text-earth"
+            className="display-italic text-balance max-w-5xl mt-2 text-earth"
             style={{ fontSize: "var(--text-display-xl)" }}
           >
             You shouldn&apos;t.
@@ -217,10 +225,10 @@ export default function Home() {
           </FadeIn>
           <FadeIn delay={0.1}>
             <h2
-              className="display-italic mb-10"
+              className="display-sans mb-10"
               style={{ fontSize: "var(--text-display-lg)" }}
             >
-              Your audience scrolled past your last sales page in 8 seconds.
+              Your audience scrolled past your last sales page in <em>8 seconds.</em>
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
@@ -250,10 +258,10 @@ export default function Home() {
           </FadeIn>
           <FadeIn delay={0.1}>
             <h2
-              className="display-italic mb-12"
+              className="display-sans mb-12"
               style={{ fontSize: "var(--text-display-lg)" }}
             >
-              Most coaches think they have a copy problem.
+              Most coaches <em>think</em> they have a copy problem.
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
@@ -296,7 +304,7 @@ export default function Home() {
           </FadeIn>
           <FadeIn delay={0.1}>
             <h2
-              className="display-italic mb-10"
+              className="display-sans mb-10"
               style={{ fontSize: "var(--text-display-lg)" }}
             >
               A short list of things I refuse to ship.
@@ -338,10 +346,10 @@ export default function Home() {
           </FadeIn>
           <FadeIn delay={0.1}>
             <h2
-              className="display-italic mb-12 max-w-4xl"
+              className="display-sans mb-12 max-w-4xl"
               style={{ fontSize: "var(--text-display-lg)" }}
             >
-              Words from people who&apos;ve worked with me.
+              Words from people who&apos;ve <em>worked</em> with me.
             </h2>
           </FadeIn>
 
@@ -399,7 +407,7 @@ export default function Home() {
           </FadeIn>
           <FadeIn delay={0.1}>
             <h2
-              className="display-italic mb-12"
+              className="display-sans mb-12"
               style={{ fontSize: "var(--text-display-lg)" }}
             >
               Four ways to work together.
@@ -437,10 +445,10 @@ export default function Home() {
           </FadeIn>
           <FadeIn delay={0.1}>
             <h2
-              className="display-italic mb-12 text-bone"
+              className="display-sans mb-12 text-bone"
               style={{ fontSize: "var(--text-display-lg)" }}
             >
-              Numbers first.
+              <em>Numbers</em> first.
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
@@ -490,11 +498,11 @@ export default function Home() {
           </FadeIn>
           <FadeIn delay={0.1}>
             <h2
-              className="display-italic mb-10"
+              className="display-sans mb-10"
               style={{ fontSize: "var(--text-display-md)" }}
             >
-              Why I&apos;m in Vietnam writing copy for English-market personal
-              brands.
+              Why I&apos;m in <em>Vietnam</em> writing copy for English-market
+              personal brands.
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
@@ -541,10 +549,10 @@ export default function Home() {
           </FadeIn>
           <FadeIn delay={0.1}>
             <h2
-              className="display-italic mb-12"
+              className="display-sans mb-12"
               style={{ fontSize: "var(--text-display-lg)" }}
             >
-              Projects I&apos;ve turned down — and why.
+              Projects I&apos;ve <em>turned down</em> — and why.
             </h2>
           </FadeIn>
           <div className="space-y-8">
@@ -600,7 +608,7 @@ export default function Home() {
           </FadeIn>
           <FadeIn delay={0.1}>
             <h2
-              className="display-italic mb-10 text-bone"
+              className="display-sans mb-10 text-bone"
               style={{ fontSize: "var(--text-display-lg)" }}
             >
               Tell me about your project.
@@ -626,15 +634,19 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer className="border-t border-ink/10 section-tight">
-        <div className="container-wide flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-ink-muted">
-          <div className="flex items-center gap-3">
-            <span className="display-italic text-xl text-ink">julthentic</span>
-            <span className="tag">contact@julthentic.com</span>
+        <div className="container-wide">
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 mb-8">
+            <div className="flex items-center gap-3">
+              <span className="display-italic text-xl text-ink">julthentic</span>
+              <span className="tag">contact@julthentic.com</span>
+            </div>
+            <p className="tag italic text-ink-muted">
+              Working with English-market clients globally
+            </p>
           </div>
-          <p className="tag italic">
-            Currently based in Vietnam · Working with English-market clients
-            globally
-          </p>
+          <div className="pt-6 border-t border-ink/10">
+            <MetadataStrip />
+          </div>
         </div>
       </footer>
     </main>

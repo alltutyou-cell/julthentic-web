@@ -120,6 +120,21 @@ body {
   letter-spacing: -0.025em;
 }
 
+/* Sans-serif display — bureau primary headlines (NeueMachina Ultrabold) */
+.display-sans {
+  font-family: var(--font-body);
+  font-weight: 800;
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+}
+.display-sans em,
+.display-sans .accent {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.015em;
+}
+
 .body-serif {
   font-family: var(--font-display);
   font-weight: 400;
@@ -144,6 +159,66 @@ body {
   line-height: 0.95;
   letter-spacing: -0.025em;
   color: var(--color-earth);
+}
+
+/* Metadata strip — bureau-style geographic + temporal markers */
+.meta-strip {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.65rem;
+  color: var(--color-ink-muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem 2rem;
+  align-items: center;
+}
+.meta-strip-divider::before {
+  content: "·";
+  margin-right: 1.2rem;
+  opacity: 0.4;
+}
+.meta-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--color-earth);
+  display: inline-block;
+  margin-right: 0.5rem;
+  animation: meta-pulse 2.5s ease-in-out infinite;
+}
+@keyframes meta-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+/* Loader */
+.loader-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--color-bone);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 3rem;
+  pointer-events: none;
+}
+.loader-bar {
+  height: 1px;
+  background: var(--color-ink);
+  width: 0%;
+  transition: width 0.1s linear;
+}
+.loader-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.65rem;
+  color: var(--color-ink);
 }
 
 /* Service card volume number — pill */
