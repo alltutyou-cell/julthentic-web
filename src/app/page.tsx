@@ -10,35 +10,35 @@ const CHAPTERS = [
   { id: "voices", num: "05", label: "Voices" },
   { id: "services", num: "06", label: "Services" },
   { id: "proof", num: "07", label: "Proof" },
-  { id: "founder", num: "08", label: "From Saigon" },
+  { id: "founder", num: "08", label: "From Vietnam" },
   { id: "rejected", num: "09", label: "Rejected Projects" },
   { id: "cta", num: "10", label: "Send Brief" },
 ];
 
 const SERVICES = [
   {
-    icon: "📱",
+    num: "Service 01",
     name: "SMM Management",
     href: "/smm",
     desc: "Posts, stories, reels, content strategy. Copy-driven, not template-driven.",
     price: "$1,500–3,500/mo retainer",
   },
   {
-    icon: "🚀",
+    num: "Service 02",
     name: "Launch Copywriting",
     href: "/launch-copy",
     desc: "Lead magnet → tripwire → flagship. Full launch ownership.",
     price: "$5,000–15,000 project",
   },
   {
-    icon: "💡",
+    num: "Service 03",
     name: "Ad Creative + Hooks Sprint",
     href: "/ad-creative",
     desc: "30-day creative pipeline for Meta + TikTok performance ads.",
     price: "$2,500/sprint or $1,800/mo retainer",
   },
   {
-    icon: "✍️",
+    num: "Service 04",
     name: "Sales Pages + Emails",
     href: "/sales-pages",
     desc: "Single deliverables — landing pages, email sequences, VSL scripts.",
@@ -80,7 +80,7 @@ const VOICES_BRAND_CODE = [
     note: "On English headlines",
   },
   {
-    quote: "Really strong ideas, Yulia 🔥",
+    quote: "Really strong ideas, Yulia.",
     author: "Oleg Khokhlov",
     role: "Owner, Brand Code agency",
     note: "On content concepts",
@@ -174,7 +174,7 @@ export default function Home() {
 
           <FadeIn delay={1.5}>
             <p className="mt-6 max-w-2xl text-sm text-ink-muted body-serif italic">
-              Working remotely from Saigon. Past clients include Afnan Khalifa,
+              Working remotely from Vietnam. Past clients include Afnan Khalifa,
               DRAY, Brand Code agency, and Thinspaces Weddings.
             </p>
           </FadeIn>
@@ -224,7 +224,7 @@ export default function Home() {
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
-            <p className="body-serif text-lg md:text-xl text-ink-soft leading-relaxed mb-6">
+            <p className="body-serif text-lg md:text-xl text-ink-soft leading-relaxed mb-6 drop-cap">
               You watched the analytics — high impressions, low time-on-page.
               You assumed the offer was off, or maybe the timing was wrong.
             </p>
@@ -275,7 +275,7 @@ export default function Home() {
             </table>
           </FadeIn>
           <FadeIn delay={0.3}>
-            <p className="body-serif text-lg md:text-xl text-ink-soft leading-relaxed mt-8">
+            <p className="body-serif text-lg md:text-xl text-ink-soft leading-relaxed mt-8 drop-cap">
               Your audience trusts you on video. They trust you in DMs. Then
               they hit your sales page — and the gap between the warm human
               they follow and the polished marketing voice on the page makes
@@ -410,8 +410,8 @@ export default function Home() {
             {SERVICES.map((s, i) => (
               <FadeIn key={s.name} delay={0.2 + i * 0.08}>
                 <a href={s.href} className="service-card block group">
-                  <div className="text-3xl mb-4">{s.icon}</div>
-                  <h3 className="display-italic text-2xl md:text-3xl mb-3 group-hover:text-earth transition-colors">
+                  <span className="service-vol mb-5">{s.num}</span>
+                  <h3 className="display-italic text-2xl md:text-3xl mt-5 mb-3 group-hover:text-earth transition-colors">
                     {s.name}
                   </h3>
                   <p className="body-serif text-base text-ink-soft leading-relaxed mb-4 italic">
@@ -444,30 +444,39 @@ export default function Home() {
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
-            <p className="body-serif text-xl md:text-2xl text-bone leading-relaxed mb-6">
+            <p className="body-serif text-xl md:text-2xl text-bone leading-relaxed mb-12">
               The Afnan Khalifa launch — joint with DRAY (128K, $28M+ student
               revenue) and Yasmin.
             </p>
           </FadeIn>
-          <FadeIn delay={0.3}>
-            <ul className="space-y-3 body-serif text-lg text-bone/85 leading-relaxed">
-              <li>
-                <span className="text-earth">→</span> Target: $2M revenue
-              </li>
-              <li>
-                <span className="text-earth">→</span> Result: 26,000
-                registrations on the free webinar
-              </li>
-              <li>
-                <span className="text-earth">→</span> KPI scaling from 10K → 30K
-                through the campaign
-              </li>
-              <li>
-                <span className="text-earth">→</span> Full launch copy ownership:
-                landing pages, webinar sales script, email sequence, English
-                reels
-              </li>
-            </ul>
+
+          <div className="grid md:grid-cols-3 gap-12 mb-12">
+            <FadeIn delay={0.3}>
+              <div>
+                <p className="display-stat">$2M</p>
+                <p className="tag text-bone/70 mt-2">Launch target revenue</p>
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.4}>
+              <div>
+                <p className="display-stat">26K</p>
+                <p className="tag text-bone/70 mt-2">Webinar registrations</p>
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.5}>
+              <div>
+                <p className="display-stat">10K → 30K</p>
+                <p className="tag text-bone/70 mt-2">KPI scaled mid-campaign</p>
+              </div>
+            </FadeIn>
+          </div>
+
+          <FadeIn delay={0.6}>
+            <p className="body-serif text-lg text-bone/85 leading-relaxed">
+              Full launch copy ownership: landing pages, webinar sales script,
+              email sequence, English reels — written through Brand Code agency
+              under owner Oleg Khokhlov.
+            </p>
           </FadeIn>
         </div>
       </section>
@@ -477,19 +486,19 @@ export default function Home() {
         <span className="corner-label tl text-ink">Vol. 08</span>
         <div className="container-narrow">
           <FadeIn>
-            <p className="vol-marker mb-6">Vol. 08 · From Saigon</p>
+            <p className="vol-marker mb-6">Vol. 08 · From Vietnam</p>
           </FadeIn>
           <FadeIn delay={0.1}>
             <h2
               className="display-italic mb-10"
               style={{ fontSize: "var(--text-display-md)" }}
             >
-              Why I&apos;m in Saigon writing copy for English-market personal
+              Why I&apos;m in Vietnam writing copy for English-market personal
               brands.
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
-            <p className="body-serif text-lg md:text-xl text-ink-soft leading-relaxed mb-6">
+            <p className="body-serif text-lg md:text-xl text-ink-soft leading-relaxed mb-6 drop-cap">
               I left my last agency role in 2024 and moved to Vietnam. Not for
               digital-nomad aesthetics — for the cost-of-living math. Living
               here means I can afford to take fewer clients and go deeper on
@@ -623,7 +632,7 @@ export default function Home() {
             <span className="tag">contact@julthentic.com</span>
           </div>
           <p className="tag italic">
-            Currently based in Saigon · Working with English-market clients
+            Currently based in Vietnam · Working with English-market clients
             globally
           </p>
         </div>

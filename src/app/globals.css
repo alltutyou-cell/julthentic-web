@@ -135,6 +135,43 @@ body {
   font-weight: 500;
 }
 
+/* Drop cap — editorial signature */
+.drop-cap::first-letter {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-style: italic;
+  float: left;
+  font-size: 5.2rem;
+  line-height: 0.85;
+  padding-right: 0.6rem;
+  padding-top: 0.35rem;
+  color: var(--color-earth);
+}
+
+/* Display stat — oversized data anchors */
+.display-stat {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.025em;
+  color: var(--color-earth);
+}
+
+/* Service card volume number — pill */
+.service-vol {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-ink-muted);
+  border: 1px solid currentColor;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  display: inline-block;
+}
+
 /* Quote block */
 .quote-block {
   border-left: 2px solid var(--color-earth);
