@@ -135,19 +135,6 @@ body {
   font-weight: 500;
 }
 
-/* Drop cap — editorial signature */
-.drop-cap::first-letter {
-  font-family: var(--font-display);
-  font-weight: 500;
-  font-style: italic;
-  float: left;
-  font-size: 5.2rem;
-  line-height: 0.85;
-  padding-right: 0.6rem;
-  padding-top: 0.35rem;
-  color: var(--color-earth);
-}
-
 /* Display stat — oversized data anchors */
 .display-stat {
   font-family: var(--font-display);

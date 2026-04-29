@@ -224,7 +224,7 @@ export default function Home() {
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
-            <p className="body-serif text-lg md:text-xl text-ink-soft leading-relaxed mb-6 drop-cap">
+            <p className="body-serif text-lg md:text-xl text-ink-soft leading-relaxed mb-6">
               You watched the analytics — high impressions, low time-on-page.
               You assumed the offer was off, or maybe the timing was wrong.
             </p>
@@ -275,7 +275,7 @@ export default function Home() {
             </table>
           </FadeIn>
           <FadeIn delay={0.3}>
-            <p className="body-serif text-lg md:text-xl text-ink-soft leading-relaxed mt-8 drop-cap">
+            <p className="body-serif text-lg md:text-xl text-ink-soft leading-relaxed mt-8">
               Your audience trusts you on video. They trust you in DMs. Then
               they hit your sales page — and the gap between the warm human
               they follow and the polished marketing voice on the page makes
@@ -498,7 +498,7 @@ export default function Home() {
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
-            <p className="body-serif text-lg md:text-xl text-ink-soft leading-relaxed mb-6 drop-cap">
+            <p className="body-serif text-lg md:text-xl text-ink-soft leading-relaxed mb-6">
               I left my last agency role in 2024 and moved to Vietnam. Not for
               digital-nomad aesthetics — for the cost-of-living math. Living
               here means I can afford to take fewer clients and go deeper on
