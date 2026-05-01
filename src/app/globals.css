@@ -220,6 +220,64 @@ body {
   color: var(--color-ink);
 }
 
+/* Brief form */
+.brief-form-shell .field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+.brief-form-shell .field span {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.65rem;
+  color: var(--color-bone);
+  opacity: 0.7;
+}
+.brief-form-shell input,
+.brief-form-shell select,
+.brief-form-shell textarea {
+  background: transparent;
+  border: 1px solid rgba(236, 232, 217, 0.25);
+  border-radius: 4px;
+  padding: 0.85rem 1rem;
+  font-family: var(--font-body);
+  color: var(--color-bone);
+  font-size: 0.95rem;
+  transition: border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  width: 100%;
+}
+.brief-form-shell input:hover,
+.brief-form-shell select:hover,
+.brief-form-shell textarea:hover {
+  border-color: rgba(236, 232, 217, 0.45);
+}
+.brief-form-shell input:focus,
+.brief-form-shell select:focus,
+.brief-form-shell textarea:focus {
+  outline: none;
+  border-color: var(--color-earth);
+}
+.brief-form-shell textarea {
+  resize: vertical;
+  min-height: 8rem;
+}
+.brief-form-shell select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23ece8d9' fill-opacity='0.5' d='M6 8 0 0h12L6 8Z'/%3E%3C/svg%3E");
+  background-position: right 1rem center;
+  background-repeat: no-repeat;
+  padding-right: 2.5rem;
+}
+.brief-form-shell select option {
+  background: var(--color-ink);
+  color: var(--color-bone);
+}
+.brief-form-shell input::placeholder,
+.brief-form-shell textarea::placeholder {
+  color: rgba(236, 232, 217, 0.4);
+}
+
 /* Service card volume number — pill */
 .service-vol {
   font-family: var(--font-mono);

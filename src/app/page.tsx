@@ -3,6 +3,7 @@ import { RevealText } from "@/components/RevealText";
 import { ChapterIndex } from "@/components/ChapterIndex";
 import { Loader } from "@/components/Loader";
 import { MetadataStrip } from "@/components/MetadataStrip";
+import { BriefForm } from "@/components/BriefForm";
 
 const CHAPTERS = [
   { id: "hero", num: "01", label: "Vol. 01" },
@@ -596,38 +597,33 @@ export default function Home() {
         </div>
       </section>
 
-      {/* VOL. 10 — CTA */}
+      {/* VOL. 10 — CTA + FORM */}
       <section
         id="cta"
         className="section bg-ink text-bone relative paper-grain"
       >
         <span className="corner-label tl text-bone">Vol. 10</span>
-        <div className="container-narrow text-center">
+        <div className="container-mid">
           <FadeIn>
             <p className="vol-marker mb-6 text-earth">Vol. 10 · Send brief</p>
           </FadeIn>
           <FadeIn delay={0.1}>
             <h2
-              className="display-sans mb-10 text-bone"
+              className="display-sans mb-8 text-bone text-center md:text-left"
               style={{ fontSize: "var(--text-display-lg)" }}
             >
               Tell me about your project.
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
-            <p className="body-serif text-lg md:text-xl text-bone/85 leading-relaxed mb-12 max-w-xl mx-auto">
-              Send a brief. The more you share — audience, timeline, past
-              attempts, current state — the sharper my response will be. I reply
-              within 24 hours with whether we&apos;re a fit and what comes next.
+            <p className="body-serif text-lg md:text-xl text-bone/85 leading-relaxed mb-12 max-w-2xl">
+              The more you share — audience, timeline, past attempts, current
+              state — the sharper my response will be. I reply within 24 hours
+              with whether we&apos;re a fit and what comes next.
             </p>
           </FadeIn>
           <FadeIn delay={0.3}>
-            <a
-              href="mailto:contact@julthentic.com"
-              className="btn-cta bg-earth text-bone hover:bg-bone hover:text-ink"
-            >
-              Send Project Brief →
-            </a>
+            <BriefForm />
           </FadeIn>
         </div>
       </section>
