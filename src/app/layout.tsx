@@ -52,9 +52,9 @@ const gagen = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Julthentic — Launch copy + SMM for personal brands",
+  title: "Julthentic — Launch strategist & copywriter for personal brands",
   description:
-    "Anti-AI, anti-template copy for English-market personal brands. Launch copywriting, SMM management, ad creative, and sales pages — written by a human, not a prompt.",
+    "Anti-AI, anti-template launches for personal brands. Strategy, copywriting, SMM, ad creative, and sales pages — built around your real voice, not a prompt.",
   keywords: [
     "launch copywriter",
     "SMM management",

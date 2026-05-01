@@ -125,7 +125,7 @@ export default function Home() {
             julthentic
           </span>
           <span className="tag text-ink-muted hidden sm:block">
-            Launch copy · SMM · Personal brands
+            Launch strategist · Copywriter · Personal brands
           </span>
         </div>
         <div className="mt-6 pt-6 border-t border-ink/10">
@@ -501,8 +501,8 @@ export default function Home() {
               className="display-sans mb-10"
               style={{ fontSize: "var(--text-display-md)" }}
             >
-              Why I&apos;m in Vietnam writing copy for English-market
-              personal brands.
+              Why I&apos;m in Vietnam running launches for personal brands
+              everywhere else.
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
@@ -641,7 +641,7 @@ export default function Home() {
               <span className="tag">contact@julthentic.com</span>
             </div>
             <p className="tag italic text-ink-muted">
-              Working with English-market clients globally
+              Running launches for personal brands worldwide
             </p>
           </div>
           <div className="pt-6 border-t border-ink/10">
